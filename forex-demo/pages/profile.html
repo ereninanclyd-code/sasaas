@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Profil | AHLATCI YATIRIM</title>
+
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+
+<body data-page="profile">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark"></div>
+
+            <div class="brand-copy">
+                <strong>AHLATCI</strong>
+                <span>YATIRIM</span>
+            </div>
+        </div>
+
+        <div class="nav-title">YATIRIM PANELİ</div>
+
+        <nav class="nav">
+
+            <a data-page="dashboard" href="dashboard.html">
+                <span class="nav-icon">⌂</span>
+                Genel Bakış
+            </a>
+
+            <a data-page="portfolio" href="portfolio.html">
+                <span class="nav-icon">◫</span>
+                Portföy
+            </a>
+
+            <a data-page="markets" href="markets.html">
+                <span class="nav-icon">↗</span>
+                Piyasalar
+            </a>
+
+            <a data-page="orders" href="orders.html">
+                <span class="nav-icon">≡</span>
+                Emirler
+            </a>
+
+            <a data-page="deposit" href="deposit.html">
+                <span class="nav-icon">＋</span>
+                Para Yatırma
+            </a>
+
+            <a data-page="iban" href="iban.html">
+                <span class="nav-icon">▣</span>
+                IBAN
+            </a>
+
+            <a data-page="withdraw" href="withdraw.html">
+                <span class="nav-icon">−</span>
+                Para Çekme
+            </a>
+
+            <a data-page="transactions" href="transactions.html">
+                <span class="nav-icon">↔</span>
+                Hareketler
+            </a>
+
+            <a data-page="reports" href="reports.html">
+                <span class="nav-icon">▥</span>
+                Raporlar
+            </a>
+
+            <a data-page="notifications" href="notifications.html">
+                <span class="nav-icon">•</span>
+                Bildirimler
+            </a>
+
+            <a data-page="profile" href="profile.html">
+                <span class="nav-icon">♙</span>
+                Profil
+            </a>
+
+            <a data-page="support" href="support.html">
+                <span class="nav-icon">?</span>
+                Destek
+            </a>
+
+            <a data-page="settings" href="settings.html">
+                <span class="nav-icon">⚙</span>
+                Ayarlar
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            © 2026 Ahlatcı Yatırım
+            <br>
+            UI/UX prototipi · Sürüm 3.0
+        </div>
+
+    </aside>
+
+    <!-- MAIN APP -->
+    <div class="app">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="topbar-title">
+
+                <button
+                    type="button"
+                    class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Menüyü aç"
+                >
+                    ☰
+                </button>
+
+                <div>
+                    <div class="crumb">
+                        Ahlatcı Yatırım Paneli
+                        <span>/</span>
+                        Hesap
+                    </div>
+
+                    <h1>Profil ve Hesap Bilgileri</h1>
+                </div>
+
+            </div>
+
+            <div class="top-actions">
+
+                <button
+                    class="icon-btn"
+                    type="button"
+                    title="Bildirimler"
+                    aria-label="Bildirimler"
+                >
+                    ♢
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="user-box">
+
+                    <div class="avatar">
+                        YK
+                    </div>
+
+                    <div class="user-box-copy">
+                        <strong>Yunus Köse</strong>
+                        <span>Standart yatırım hesabı</span>
+                    </div>
+
+                </div>
+
+                <button
+                    class="icon-btn"
+                    id="logout"
+                    type="button"
+                    title="Çıkış"
+                    aria-label="Çıkış yap"
+                >
+                    ↪
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <main class="content profile-page">
+
+            <!-- PROFILE HERO -->
+            <section class="profile-hero">
+
+                <div class="profile-hero-main">
+
+                    <div class="profile-avatar-large">
+                        <span>DK</span>
+
+                        <button
+                            type="button"
+                            class="profile-avatar-edit"
+                            title="Profil fotoğrafını değiştir"
+                            aria-label="Profil fotoğrafını değiştir"
+                        >
+                            ✎
+                        </button>
+                    </div>
+
+                    <div class="profile-identity">
+
+                        <div class="profile-eyebrow">
+                            YATIRIMCI PROFİLİ
+                        </div>
+
+                        <h2>Yunus Köse</h2>
+
+                        <p>
+                            Ahlatcı Yatırım platformu standart hesap profili
+                        </p>
+
+                        <div class="profile-tags">
+
+                            <span class="profile-tag profile-tag-success">
+                                <i></i>
+                                Hesap aktif
+                            </span>
+
+                            <span class="profile-tag">
+                                Müşteri No: DF-2026-34891
+                            </span>
+
+                            <span class="profile-tag">
+                                Bireysel hesap
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile-hero-actions">
+
+                    <button
+                        type="button"
+                        class="btn soft"
+                        id="profilePreviewButton"
+                    >
+                        Profil Önizleme
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn gold"
+                        id="editProfileButton"
+                    >
+                        Bilgileri Düzenle
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- ACCOUNT SUMMARY -->
+            <section class="profile-summary-grid">
+
+                <article class="profile-summary-card">
+
+                    <div class="profile-summary-icon">
+                        ✓
+                    </div>
+
+                    <div>
+                        <span>Hesap Durumu</span>
+                        <strong>Aktif</strong>
+                        <small>Aktif hesap kullanıma açık</small>
+                    </div>
+
+                </article>
+
+                <article class="profile-summary-card">
+
+                    <div class="profile-summary-icon">
+                        ◇
+                    </div>
+
+                    <div>
+                        <span>Hesap Türü</span>
+                        <strong>Standart</strong>
+                        <small>Bireysel yatırım hesabı</small>
+                    </div>
+
+                </article>
+
+                <article class="profile-summary-card">
+
+                    <div class="profile-summary-icon">
+                        ◷
+                    </div>
+
+                    <div>
+                        <span>Son Giriş</span>
+                        <strong>Bugün, 14:32</strong>
+                        <small>İstanbul, Türkiye</small>
+                    </div>
+
+                </article>
+
+                <article class="profile-summary-card">
+
+                    <div class="profile-summary-icon">
+                        ⛨
+                    </div>
+
+                    <div>
+                        <span>Güvenlik Seviyesi</span>
+                        <strong>Yüksek</strong>
+                        <small>İki adımlı doğrulama Açık</small>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- MAIN PROFILE GRID -->
+            <section class="profile-layout">
+
+                <!-- LEFT COLUMN -->
+                <div class="profile-main-column">
+
+                    <!-- PERSONAL INFORMATION -->
+                    <form
+                        class="card profile-card"
+                        id="profileForm"
+                        data-demo
+                    >
+
+                        <div class="card-head profile-card-head">
+
+                            <div>
+                                <span class="card-kicker">
+                                    HESAP BİLGİLERİ
+                                </span>
+
+                                <h3>Kişisel Bilgiler</h3>
+
+                                <p>
+                                    Hesabınızda görüntülenen temel profil bilgileri
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="form-grid profile-form-grid">
+
+                            <div class="field">
+
+                                <label for="firstName">
+                                    Ad
+                                </label>
+
+                                <div class="input-shell">
+                                    <span class="input-icon">♙</span>
+
+                                    <input
+                                        id="firstName"
+                                        name="firstName"
+                                        value="Yunus"
+                                        autocomplete="given-name"
+                                        disabled
+                                    >
+                                </div>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="lastName">
+                                    Soyad
+                                </label>
+
+                                <div class="input-shell">
+                                    <span class="input-icon">♙</span>
+
+                                    <input
+                                        id="lastName"
+                                        name="lastName"
+                                        value="Köse"
+                                        autocomplete="family-name"
+                                        disabled
+                                    >
+                                </div>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="email">
+                                    E-posta Adresi
+                                </label>
+
+                                <div class="input-shell">
+                                    <span class="input-icon">@</span>
+
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        value="yunuskose7171@gmail.com"
+                                        autocomplete="email"
+                                        disabled
+                                    >
+                                </div>
+
+                                <small class="field-note">
+                                    Bildirimler bu adrese gönderilir.
+                                </small>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="phone">
+                                    Cep Telefonu
+                                </label>
+
+                                <div class="input-shell">
+                                    <span class="input-icon">☎</span>
+
+                                    <input
+                                        id="phone"
+                                        name="phone"
+                                        type="tel"
+                                        value="+90 536 266 94 40"
+                                        autocomplete="tel"
+                                        disabled
+                                    >
+                                </div>
+
+                                <small class="field-note verified-note">
+                                    <span>✓</span>
+                                     telefon doğrulandı
+                                </small>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="birthDate">
+                                    Doğum Tarihi
+                                </label>
+
+                                <div class="input-shell">
+                                    <span class="input-icon">◫</span>
+
+                                    <input
+                                        id="birthDate"
+                                        name="birthDate"
+                                        type="date"
+                                        value="1950-11-01"
+                                        disabled
+                                    >
+                                </div>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="accountType">
+                                    Hesap Türü
+                                </label>
+
+                                <div class="input-shell">
+                                    <span class="input-icon">◇</span>
+
+                                    <select
+                                        id="accountType"
+                                        name="accountType"
+                                        disabled
+                                    >
+                                        <option selected>
+                                            Bireysel Hesap
+                                        </option>
+
+                                        <option>
+                                            Kurumsal Hesap
+                                        </option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="profile-form-footer">
+
+                            <div class="profile-form-message">
+                                <span>ⓘ</span>
+
+                                <p>
+                                    Bu bilgiler yalnızca arayüz gösterimi için
+                                    hazırlanmış örnek verilerdir.
+                                </p>
+                            </div>
+
+                            <div class="profile-form-actions">
+
+                                <button
+                                    type="button"
+                                    class="btn ghost"
+                                    id="cancelProfileButton"
+                                    hidden
+                                >
+                                    Vazgeç
+                                </button>
+
+                                <button
+                                    type="submit"
+                                    class="btn gold"
+                                    id="saveProfileButton"
+                                    disabled
+                                >
+                                    Değişiklikleri Kaydet
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <!-- COMMUNICATION SETTINGS -->
+                    <section class="card profile-card">
+
+                        <div class="card-head profile-card-head">
+
+                            <div>
+                                <span class="card-kicker">
+                                    İLETİŞİM TERCİHLERİ
+                                </span>
+
+                                <h3>Bildirim Ayarları</h3>
+
+                                <p>
+                                    Hangi konularda bilgilendirilmek istediğinizi seçin
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="preference-list">
+
+                            <label class="preference-item">
+
+                                <div class="preference-icon">
+                                    ♢
+                                </div>
+
+                                <div class="preference-copy">
+                                    <strong>Piyasa Bildirimleri</strong>
+
+                                    <span>
+                                        Fiyat hareketleri ve piyasa gelişmeleri
+                                    </span>
+                                </div>
+
+                                <input
+                                    type="checkbox"
+                                    class="switch-input"
+                                    checked
+                                >
+
+                                <span class="switch"></span>
+
+                            </label>
+
+                            <label class="preference-item">
+
+                                <div class="preference-icon">
+                                    ↔
+                                </div>
+
+                                <div class="preference-copy">
+                                    İşlem Bildirimleri
+                                </div>
+
+                                <div class="preference-description">
+                                    Emir ve hesap hareketi bilgilendirmeleri
+                                </div>
+
+                                <input
+                                    type="checkbox"
+                                    class="switch-input"
+                                    checked
+                                >
+
+                                <span class="switch"></span>
+
+                            </label>
+
+                            <label class="preference-item">
+
+                                <div class="preference-icon">
+                                    ✉
+                                </div>
+
+                                <div class="preference-copy">
+                                    <strong>E-posta Bülteni</strong>
+
+                                    <span>
+                                        Haftalık analiz ve demo içerikleri
+                                    </span>
+                                </div>
+
+                                <input
+                                    type="checkbox"
+                                    class="switch-input"
+                                >
+
+                                <span class="switch"></span>
+
+                            </label>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <aside class="profile-side-column">
+
+                    <!-- ACCOUNT DETAILS -->
+                    <section class="card profile-side-card">
+
+                        <div class="profile-side-card-title">
+                            <span>Hesap Detayları</span>
+                            <div class="small-gold-icon">◇</div>
+                        </div>
+
+                        <div class="account-detail-list">
+
+                            <div class="account-detail-row">
+                                <span>Müşteri numarası</span>
+                                <strong>DF-2026-34891</strong>
+                            </div>
+
+                            <div class="account-detail-row">
+                                <span>Hesap açılış tarihi</span>
+                                <strong>15 Temmuz 2026</strong>
+                            </div>
+
+                            <div class="account-detail-row">
+                                <span>Hesap para birimi</span>
+                                <strong>USD / TRY</strong>
+                            </div>
+
+                            <div class="account-detail-row">
+                                <span>Yatırımcı profili</span>
+                                <strong>Dengeli</strong>
+                            </div>
+
+                            <div class="account-detail-row">
+                                <span>Hesap durumu</span>
+
+                                <strong class="status-text">
+                                    <i></i>
+                                    Aktif
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- SECURITY -->
+                    <section class="card profile-side-card security-card">
+
+                        <div class="profile-side-card-title">
+                            <span>Güvenlik</span>
+                            <div class="small-gold-icon">⛨</div>
+                        </div>
+
+                        <div class="security-score">
+
+                            <div class="security-score-head">
+                                <span>Güvenlik puanı</span>
+                                <strong>65%</strong>
+                            </div>
+
+                            <div class="security-progress">
+                                <span style="width: 65%"></span>
+                            </div>
+
+                            <p>
+                                Hesap güvenliğini artırmak için iki adımlı
+                                doğrulamayı etkinleştirin.
+                            </p>
+
+                        </div>
+
+                        <div class="security-actions">
+
+                            <a href="settings.html" class="security-action">
+
+                                <div>
+                                    <span class="security-action-icon">●</span>
+
+                                    <div>
+                                        <strong>Şifre</strong>
+                                        <small>Son güncelleme: 30 gün önce</small>
+                                    </div>
+                                </div>
+
+                                <span>›</span>
+
+                            </a>
+
+                            <a href="settings.html" class="security-action">
+
+                                <div>
+                                    <span class="security-action-icon">◆</span>
+
+                                    <div>
+                                        <strong>İki Adımlı Doğrulama</strong>
+                                        <small>Şu anda devre dışı</small>
+                                    </div>
+                                </div>
+
+                                <span>›</span>
+
+                            </a>
+
+                            <a href="settings.html" class="security-action">
+
+                                <div>
+                                    <span class="security-action-icon">⌘</span>
+
+                                    <div>
+                                        <strong>Aktif Oturumlar</strong>
+                                        <small>1 cihaz bağlı</small>
+                                    </div>
+                                </div>
+
+                                <span>›</span>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                    <!-- DOCUMENT STATUS -->
+                    <section class="card profile-side-card">
+
+                        <div class="profile-side-card-title">
+                            <span>Belge Durumu</span>
+                            <div class="small-gold-icon">▤</div>
+                        </div>
+
+                        <div class="document-status-list">
+
+                            <div class="document-status-item completed">
+
+                                <div class="document-status-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>Kimlik Bilgileri</strong>
+                                    <span>Demo doğrulama tamamlandı</span>
+                                </div>
+
+                            </div>
+
+                            <div class="document-status-item completed">
+
+                                <div class="document-status-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>İletişim Bilgileri</strong>
+                                    <span>Demo doğrulama tamamlandı</span>
+                                </div>
+
+                            </div>
+
+                            <div class="document-status-item pending">
+
+                                <div class="document-status-icon">
+                                    !
+                                </div>
+
+                                <div>
+                                    <strong>Uygunluk Testi</strong>
+                                    <span>Demo incelemesi bekleniyor</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn soft full-width-button"
+                        >
+                            Belge Durumunu Görüntüle
+                        </button>
+
+                    </section>
+
+
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="bottom-nav" aria-label="Mobil navigasyon">
+
+        <a data-page="dashboard" href="dashboard.html">
+            <span>⌂</span>
+            Ana Sayfa
+        </a>
+
+        <a data-page="deposit" href="deposit.html">
+            <span>＋</span>
+            Para Yatır
+        </a>
+
+        <a data-page="withdraw" href="withdraw.html">
+            <span>−</span>
+            Para Çek
+        </a>
+
+        <a data-page="profile" href="profile.html">
+            <span>♙</span>
+            Profil
+        </a>
+
+    </nav>
+
+    <div class="demo-ribbon">
+        DEMO · GERÇEK İŞLEM YOK
+    </div>
+
+    <div
+        class="profile-toast"
+        id="profileToast"
+        role="status"
+        aria-live="polite"
+    >
+        <span>✓</span>
+
+        <div>
+            <strong>Demo bilgiler kaydedildi</strong>
+            <small>Herhangi bir sunucuya veri gönderilmedi.</small>
+        </div>
+    </div>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("profileForm");
+            const editButton = document.getElementById("editProfileButton");
+            const saveButton = document.getElementById("saveProfileButton");
+            const cancelButton = document.getElementById("cancelProfileButton");
+            const toast = document.getElementById("profileToast");
+
+            const formControls = form.querySelectorAll(
+                "input, select, textarea"
+            );
+
+            const originalValues = new Map();
+
+            formControls.forEach(function (control) {
+                originalValues.set(control, control.value);
+            });
+
+            function setEditingState(isEditing) {
+                formControls.forEach(function (control) {
+                    control.disabled = !isEditing;
+                });
+
+                saveButton.disabled = !isEditing;
+                cancelButton.hidden = !isEditing;
+
+                editButton.textContent = isEditing
+                    ? "Düzenleme Açık"
+                    : "Bilgileri Düzenle";
+
+                editButton.disabled = isEditing;
+
+                form.classList.toggle(
+                    "profile-form-editing",
+                    isEditing
+                );
+            }
+
+            editButton.addEventListener("click", function () {
+                setEditingState(true);
+
+                const firstInput = form.querySelector("input");
+
+                if (firstInput) {
+                    firstInput.focus();
+                }
+            });
+
+            cancelButton.addEventListener("click", function () {
+                formControls.forEach(function (control) {
+                    control.value = originalValues.get(control);
+                });
+
+                setEditingState(false);
+            });
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                formControls.forEach(function (control) {
+                    originalValues.set(control, control.value);
+                });
+
+                setEditingState(false);
+
+                toast.classList.add("show");
+
+                window.setTimeout(function () {
+                    toast.classList.remove("show");
+                }, 3500);
+            });
+        });
+    </script>
+
+</body>
+</html>
